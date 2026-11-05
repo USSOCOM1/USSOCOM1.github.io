@@ -1,0 +1,4 @@
+DISCORD_CLIENT_SECRET=
+SESSION_SECRET=change-me-long-random
+INGEST_SECRET=change-me-long-random
+DEV_LOGIN=1

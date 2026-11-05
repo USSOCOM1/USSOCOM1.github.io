@@ -1,0 +1,13 @@
+name = "ussocom-members"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Discord application (OAuth2) client ID: SEC WAR's application.
+DISCORD_CLIENT_ID = ""
+# Site origins allowed to sign in and read the members data (comma separated).
+ALLOWED_ORIGINS = "http://localhost:8080"
+
+[[kv_namespaces]]
+binding = "MEMBERS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
