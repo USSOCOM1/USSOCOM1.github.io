@@ -2,3 +2,4 @@ node_modules/
 .wrangler/
 worker/.dev.vars
 .DS_Store
+worker/.cloudflare.env
