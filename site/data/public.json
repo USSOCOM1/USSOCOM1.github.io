@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-06T03:39:28.047Z",
+ "generated": "2026-11-06T03:55:36.716Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -9,9 +9,9 @@
   "bot": "SEC WAR",
   "callsign": "Havoc"
  },
- "discordInvite": null,
+ "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 20,
+  "members": 19,
   "seats": 103,
   "filled": 15,
   "open": 88,
@@ -1252,7 +1252,7 @@
     {
      "value": "Raider",
      "stage": "operator",
-     "count": 11
+     "count": 10
     }
    ],
    "open": 10
