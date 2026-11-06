@@ -1,12 +1,14 @@
 name = "ussocom-members"
 main = "src/index.js"
+routes = [{ pattern = "members.ussocommilsim.com", custom_domain = true }]
 compatibility_date = "2026-10-01"
+workers_dev = true
 
 [vars]
 # Discord application (OAuth2) client ID: SEC WAR's application.
 DISCORD_CLIENT_ID = "1548948481622937772"
 # Site origins allowed to sign in and read the members data (comma separated).
-ALLOWED_ORIGINS = "https://ussocom1.github.io,http://localhost:8080"
+ALLOWED_ORIGINS = "https://ussocommilsim.com,https://www.ussocommilsim.com,https://ussocom1.github.io,http://localhost:8080"
 
 [[kv_namespaces]]
 binding = "MEMBERS"
