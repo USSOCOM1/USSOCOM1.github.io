@@ -9,6 +9,7 @@
   const main = document.getElementById('main');
   let data = null;
   let members = null;
+  let media = null;
 
   // ---------------------------------------------------------------- helpers
   const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -112,6 +113,7 @@
         <div class="section-head"><div><div class="eyebrow">Order of battle</div><h2>The units</h2></div><a href="#/units">All units →</a></div>
         <div class="grid units">${data.units.map(unitCard).join('')}</div>
       </section>
+      ${mediaStrip(8)}
       <section class="two">
         <div>
           <div class="section-head"><div><div class="eyebrow">Coming up</div><h2>Schedule</h2></div><a href="#/schedule">Full schedule →</a></div>
@@ -128,6 +130,78 @@
           </div>
         </div>
       </section>`;
+  }
+
+  // ---------------------------------------------------------------- media
+  const mediaItems = () => media?.items ?? [];
+  const mediaThumb = (item, i) => h`
+    <button class="shot" data-media="${i}" aria-label="Open picture ${i + 1}">
+      <img src="${esc(item.thumb)}" alt="Screenshot from the USSOCOM media channel" loading="lazy" width="${item.width || ''}" height="${item.height || ''}">
+    </button>`;
+
+  function mediaStrip(n) {
+    const items = mediaItems();
+    if (!items.length) return '';
+    return h`
+      <section>
+        <div class="section-head"><div><div class="eyebrow">From the field</div><h2>Media</h2></div><a href="#/media">All media →</a></div>
+        <div class="gallery strip">${items.slice(0, n).map(mediaThumb).join('')}</div>
+      </section>`;
+  }
+
+  function pageMedia() {
+    setTitle('Media');
+    const items = mediaItems();
+    return h`
+      <section>
+        <div class="eyebrow">From the field</div>
+        <h1>Media</h1>
+        <p class="lead">The latest screenshots from our ops and training, straight from the Discord's media channel.</p>
+        ${items.length ? `<div class="gallery">${items.map(mediaThumb).join('')}</div>` : '<div class="empty">No pictures yet.</div>'}
+      </section>`;
+  }
+
+  let viewer = null;
+  function openViewer(index) {
+    const items = mediaItems();
+    if (!items.length) return;
+    if (!viewer) {
+      viewer = document.createElement('div');
+      viewer.className = 'viewer';
+      viewer.setAttribute('role', 'dialog');
+      viewer.setAttribute('aria-modal', 'true');
+      viewer.innerHTML = '<button class="v-close" aria-label="Close">×</button><button class="v-prev" aria-label="Previous">‹</button>'
+        + '<figure><img alt="Screenshot from the USSOCOM media channel"><figcaption></figcaption></figure><button class="v-next" aria-label="Next">›</button>';
+      document.body.appendChild(viewer);
+      const move = (d) => show((viewer.index + d + mediaItems().length) % mediaItems().length);
+      viewer.querySelector('.v-close').addEventListener('click', closeViewer);
+      viewer.querySelector('.v-prev').addEventListener('click', () => move(-1));
+      viewer.querySelector('.v-next').addEventListener('click', () => move(1));
+      viewer.addEventListener('click', (e) => { if (e.target === viewer) closeViewer(); });
+      document.addEventListener('keydown', (e) => {
+        if (!viewer.classList.contains('open')) return;
+        if (e.key === 'Escape') closeViewer();
+        if (e.key === 'ArrowLeft') move(-1);
+        if (e.key === 'ArrowRight') move(1);
+      });
+    }
+    const show = (i) => {
+      const item = mediaItems()[i];
+      viewer.index = i;
+      viewer.querySelector('img').src = item.src;
+      viewer.querySelector('figcaption').textContent = `${day(item.posted)} · ${i + 1} of ${mediaItems().length}`;
+    };
+    show(index);
+    viewer.classList.add('open');
+    document.body.classList.add('no-scroll');
+    viewer.querySelector('.v-close').focus();
+  }
+  function closeViewer() {
+    viewer?.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+  }
+  function wireMedia() {
+    document.querySelectorAll('[data-media]').forEach((b) => b.addEventListener('click', () => openViewer(Number(b.dataset.media))));
   }
 
   function pageUnits() {
@@ -539,13 +613,16 @@
       else if (page === 'pipeline') html = pagePipeline();
       else if (page === 'schedule') html = pageSchedule();
       else if (page === 'join') html = pageJoin();
+      else if (page === 'media') html = pageMedia();
       else if (page === 'members') html = await pageMembers(rest);
       else html = notFound();
     } catch (err) {
       html = `<div class="notice bad">Something went wrong: ${esc(err.message)}</div>`;
     }
+    closeViewer();
     main.innerHTML = html;
     wireMembers();
+    wireMedia();
     main.focus({ preventScroll: true });
     window.scrollTo(0, 0);
   }
@@ -562,6 +639,12 @@
     } catch {
       main.innerHTML = '<div class="notice bad">The roster data could not be loaded. Try again shortly.</div>';
       return;
+    }
+    media = await fetch(`data/media.json?t=${Math.floor(Date.now() / 60000)}`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    if (data.discordInvite) {
+      const link = document.getElementById('discord-link');
+      link.href = data.discordInvite;
+      link.hidden = false;
     }
     document.getElementById('motto').textContent = data.unit.motto;
     document.getElementById('updated').textContent = `Roster updated ${when(data.generated)}`;
