@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-08T02:39:12.724Z",
+ "generated": "2026-11-08T02:59:12.751Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,7 +11,7 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 34,
+  "members": 35,
   "seats": 91,
   "filled": 27,
   "open": 64,
@@ -648,7 +648,7 @@
     {
      "value": "Green Beret",
      "stage": "operator",
-     "count": 16
+     "count": 17
     }
    ],
    "open": 16
