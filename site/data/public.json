@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-08T02:59:12.751Z",
+ "generated": "2026-11-08T19:34:14.081Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,7 +11,7 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 35,
+  "members": 36,
   "seats": 91,
   "filled": 27,
   "open": 64,
@@ -638,7 +638,7 @@
     {
      "value": "SFAS Candidate",
      "stage": "selection",
-     "count": 0
+     "count": 1
     },
     {
      "value": "SFQC Student",
