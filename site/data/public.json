@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-08T00:44:44.196Z",
+ "generated": "2026-11-08T01:24:44.246Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,10 +11,10 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 34,
+  "members": 35,
   "seats": 91,
-  "filled": 27,
-  "open": 64,
+  "filled": 28,
+  "open": 63,
   "units": 4,
   "recruiting": [
    "cag",
@@ -491,7 +491,10 @@
         "billet": "Senior Communications Sergeant",
         "reqRank": "SFC",
         "leader": false,
-        "occupant": null
+        "occupant": {
+         "name": "Stix",
+         "rank": "SGT"
+        }
        },
        {
         "id": "11E2",
@@ -632,7 +635,7 @@
      }
     ],
     "seats": 28,
-    "filled": 12
+    "filled": 13
    },
    "stages": [
     {
@@ -648,10 +651,10 @@
     {
      "value": "Green Beret",
      "stage": "operator",
-     "count": 16
+     "count": 17
     }
    ],
-   "open": 16
+   "open": 15
   },
   {
    "key": "seal",
