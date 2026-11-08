@@ -28,10 +28,10 @@
       course: 'Operator Training Course: CQB, marksmanship, breaching and special reconnaissance.',
       layout: 'Squadron HQ (X01, X02), 1 Troop Team A (XA1–XA6) and Team B (XB1–XB6), 3 Troop Team I recce (XI1–XI6). The seat code is the callsign.',
     },
-    rgr: {
-      blurb: 'The large-scale raid and airfield seizure force. Platoon-level operations with rifle squads and a weapons squad.',
-      course: 'No unit course. Pass RASP and you are a Ranger; Ranger School is the follow-on leadership course and earns the Ranger Tab.',
-      layout: 'Platoon "Bulldog": Bulldog 6 platoon leader, Bulldog 7 platoon sergeant, Bulldog 1–3 rifle squads, Bulldog 4 weapons squad.',
+    sfg: {
+      blurb: 'Green Berets: twelve-man ODAs built for unconventional warfare, partner-force training, direct action and special reconnaissance.',
+      course: 'Special Forces Qualification Course: unconventional warfare, small unit tactics and your speciality (weapons, engineer, medical or comms). Graduates earn the Special Forces Tab.',
+      layout: 'ODB 0110 "Olympus" company HQ (Olympus 6/5/7/3); ODA 0111 "Ocelotl" and ODA 0113 "Hermes", seats 11A–11E2 and 13A–13E2; ODAs 0112, 0114 and 0115 closed pending expansion; Pickle Platoon "Spartan" reserve.',
     },
     seal: {
       blurb: 'Maritime special operations: combat diving, VBSS, coastal raids and direct action from the sea.',
@@ -210,7 +210,7 @@
       <section>
         <div class="eyebrow">Order of battle</div>
         <h1>Units</h1>
-        <p class="lead">Each unit serves under its real parent command. Rank and command authority stop at the unit's edge: a Ranger sergeant does not command SEALs.</p>
+        <p class="lead">Each unit serves under its real parent command. Rank and command authority stop at the unit's edge: a Green Beret sergeant does not command SEALs.</p>
         <div class="grid units">${data.units.map(unitCard).join('')}</div>
       </section>
       <section>
@@ -305,7 +305,7 @@
         <div class="steps four">
           <div class="step"><h3>Apply</h3><p>Type <code>/enlist</code> in the Discord and pick the unit you want to join. A recruiter reviews it, usually within a day or two.</p></div>
           <div class="step"><h3>Unit selection</h3><p>Fieldcraft, judgement, teamwork under pressure, shooting and movement, medical (MARCH and a 9-line) and leadership when you're put in charge. Each unit adds its own focus.</p></div>
-          <div class="step"><h3>Unit course</h3><p>Pass and you take the unit's course. The 75th has none: pass RASP and you are a Ranger.</p></div>
+          <div class="step"><h3>Unit course</h3><p>Pass and you take the unit's course: OTC, SFQC, SQT or ITC.</p></div>
           <div class="step"><h3>Operator</h3><p>Graduate and take a seat on the ORBAT. Didn't pass? Keep training and try again when your unit's command says you're ready.</p></div>
         </div>
       </section>
