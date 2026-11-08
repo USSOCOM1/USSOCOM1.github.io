@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-07T13:50:39.649Z",
+ "generated": "2026-11-08T00:44:44.196Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,13 +11,14 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 18,
-  "seats": 103,
-  "filled": 15,
-  "open": 88,
+  "members": 34,
+  "seats": 91,
+  "filled": 27,
+  "open": 64,
   "units": 4,
   "recruiting": [
    "cag",
+   "sfg",
    "seal",
    "mrb"
   ]
@@ -330,459 +331,327 @@
    "open": 18
   },
   {
-   "key": "rgr",
-   "name": "75th Ranger Regiment",
-   "short": "75th",
-   "display": "75th Ranger Regiment",
+   "key": "sfg",
+   "name": "10th Special Forces Group (Airborne)",
+   "short": "10th SFG",
+   "display": "10th Special Forces Group",
    "service": "Army",
    "parent": "USASOC",
    "parentName": "Army Special Operations Command",
-   "element": "Ranger Platoon",
-   "callsign": "Ranger",
-   "motto": "Rangers Lead the Way",
-   "selection": "Ranger Assessment and Selection Program",
-   "selectionShort": "RASP",
-   "course": null,
-   "title": "Ranger",
-   "color": "#4b6f44",
-   "recruiting": false,
+   "element": "ODB 0110",
+   "callsign": "Olympus",
+   "motto": "De Oppresso Liber",
+   "selection": "Special Forces Assessment and Selection",
+   "selectionShort": "SFAS",
+   "course": "Special Forces Qualification Course",
+   "title": "Green Beret",
+   "color": "#2e6b4f",
+   "recruiting": true,
    "orbat": {
     "elements": [
      {
-      "name": "Regimental HQ",
-      "element": "Regimental HQ",
+      "name": "ODB 0110 · Olympus",
+      "element": "ODB 0110 · Olympus",
       "section": null,
       "seats": [
        {
-        "id": "RGR-01",
-        "callsign": "Ranger 6",
-        "billet": "Regimental Commander",
-        "reqRank": "COL",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-02",
-        "callsign": "Ranger 7",
-        "billet": "Regimental CSM",
-        "reqRank": "CSM",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-03",
-        "callsign": "Ranger 3",
-        "billet": "Operations Officer (S-3)",
+        "id": "B6",
+        "callsign": "Olympus 6",
+        "billet": "SF Company Commander",
         "reqRank": "MAJ",
+        "leader": true,
+        "occupant": null
+       },
+       {
+        "id": "B5",
+        "callsign": "Olympus 5",
+        "billet": "Executive Officer",
+        "reqRank": "CPT",
+        "leader": true,
+        "occupant": null
+       },
+       {
+        "id": "B7",
+        "callsign": "Olympus 7",
+        "billet": "Company Sergeant Major",
+        "reqRank": "SGM",
+        "leader": true,
+        "occupant": {
+         "name": "Mil-Sosa",
+         "rank": "MSG"
+        }
+       },
+       {
+        "id": "B3",
+        "callsign": "Olympus 3",
+        "billet": "SF Operations Sergeant",
+        "reqRank": "MSG",
         "leader": true,
         "occupant": null
        }
       ]
      },
      {
-      "name": "Platoon HQ",
-      "element": "Platoon HQ",
+      "name": "ODA 0111 · Ocelotl",
+      "element": "ODA 0111 · Ocelotl",
       "section": null,
       "seats": [
        {
-        "id": "RGR-P6",
-        "callsign": "Bulldog 6",
-        "billet": "Platoon Leader",
-        "reqRank": "1LT",
+        "id": "11A",
+        "callsign": "11A",
+        "billet": "Detachment Commander",
+        "reqRank": "CPT",
         "leader": true,
         "occupant": null
        },
        {
-        "id": "RGR-P7",
-        "callsign": "Bulldog 7",
-        "billet": "Platoon Sergeant",
+        "id": "11W",
+        "callsign": "11W",
+        "billet": "Assistant Detachment Commander",
+        "reqRank": "CW2",
+        "leader": true,
+        "occupant": {
+         "name": "BabyOT",
+         "rank": "WO1"
+        }
+       },
+       {
+        "id": "11Z",
+        "callsign": "11Z",
+        "billet": "Team Sergeant",
+        "reqRank": "MSG",
+        "leader": true,
+        "occupant": {
+         "name": "Mil-Sosa",
+         "rank": "MSG"
+        }
+       },
+       {
+        "id": "11F",
+        "callsign": "11F",
+        "billet": "Intelligence Sergeant",
         "reqRank": "SFC",
         "leader": true,
         "occupant": null
        },
        {
-        "id": "RGR-P9",
-        "callsign": "Bulldog 9",
-        "billet": "Platoon RTO",
-        "reqRank": "SPC",
+        "id": "11B1",
+        "callsign": "11B1",
+        "billet": "Senior Weapons Sergeant",
+        "reqRank": "SFC",
         "leader": false,
         "occupant": null
        },
        {
-        "id": "RGR-PFO",
-        "callsign": "Bulldog FO",
-        "billet": "Forward Observer",
-        "reqRank": "SGT",
+        "id": "11B2",
+        "callsign": "11B2",
+        "billet": "Junior Weapons Sergeant",
+        "reqRank": "SSG",
         "leader": false,
         "occupant": null
        },
        {
-        "id": "RGR-PDOC",
-        "callsign": "Bulldog Doc",
-        "billet": "Platoon Medic",
-        "reqRank": "SGT",
+        "id": "11C1",
+        "callsign": "11C1",
+        "billet": "Senior Engineer Sergeant",
+        "reqRank": "SFC",
+        "leader": false,
+        "occupant": null
+       },
+       {
+        "id": "11C2",
+        "callsign": "11C2",
+        "billet": "Junior Engineer Sergeant",
+        "reqRank": "SSG",
+        "leader": false,
+        "occupant": null
+       },
+       {
+        "id": "11D1",
+        "callsign": "11D1",
+        "billet": "Senior Medical Sergeant",
+        "reqRank": "SFC",
+        "leader": false,
+        "occupant": null
+       },
+       {
+        "id": "11D2",
+        "callsign": "11D2",
+        "billet": "Junior Medical Sergeant",
+        "reqRank": "SSG",
+        "leader": false,
+        "occupant": {
+         "name": "Noble",
+         "rank": "SSG"
+        }
+       },
+       {
+        "id": "11E1",
+        "callsign": "11E1",
+        "billet": "Senior Communications Sergeant",
+        "reqRank": "SFC",
+        "leader": false,
+        "occupant": null
+       },
+       {
+        "id": "11E2",
+        "callsign": "11E2",
+        "billet": "Junior Communications Sergeant",
+        "reqRank": "SSG",
         "leader": false,
         "occupant": null
        }
       ]
      },
      {
-      "name": "1st Squad",
-      "element": "1st Squad",
+      "name": "ODA 0113 · Hermes",
+      "element": "ODA 0113 · Hermes",
       "section": null,
       "seats": [
        {
-        "id": "RGR-1",
-        "callsign": "Bulldog 1",
-        "billet": "Squad Leader",
+        "id": "13A",
+        "callsign": "13A",
+        "billet": "Detachment Commander",
+        "reqRank": "CPT",
+        "leader": true,
+        "occupant": {
+         "name": "ZekeVon",
+         "rank": "CPT"
+        }
+       },
+       {
+        "id": "13W",
+        "callsign": "13W",
+        "billet": "Assistant Detachment Commander",
+        "reqRank": "CW2",
+        "leader": true,
+        "occupant": {
+         "name": "R6SwitchEmDown",
+         "rank": "CW3"
+        }
+       },
+       {
+        "id": "13Z",
+        "callsign": "13Z",
+        "billet": "Team Sergeant",
+        "reqRank": "MSG",
+        "leader": true,
+        "occupant": {
+         "name": "WalkEmDown DILF",
+         "rank": "MSG"
+        }
+       },
+       {
+        "id": "13F",
+        "callsign": "13F",
+        "billet": "Intelligence Sergeant",
+        "reqRank": "SFC",
+        "leader": true,
+        "occupant": {
+         "name": "Lamb1e",
+         "rank": "SSG"
+        }
+       },
+       {
+        "id": "13B1",
+        "callsign": "13B1",
+        "billet": "Senior Weapons Sergeant",
+        "reqRank": "SFC",
+        "leader": false,
+        "occupant": {
+         "name": "JNWA",
+         "rank": "SGT"
+        }
+       },
+       {
+        "id": "13B2",
+        "callsign": "13B2",
+        "billet": "Junior Weapons Sergeant",
         "reqRank": "SSG",
-        "leader": true,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "1st Squad · Fire Team Alpha",
-      "element": "1st Squad",
-      "section": "Fire Team Alpha",
-      "seats": [
-       {
-        "id": "RGR-1A1",
-        "callsign": "Bulldog 1 Alpha 1",
-        "billet": "Team Leader",
-        "reqRank": "SGT",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-1A2",
-        "callsign": "Bulldog 1 Alpha 2",
-        "billet": "Automatic Rifleman",
-        "reqRank": "SPC",
         "leader": false,
         "occupant": null
        },
        {
-        "id": "RGR-1A3",
-        "callsign": "Bulldog 1 Alpha 3",
-        "billet": "Grenadier",
-        "reqRank": "SPC",
+        "id": "13C1",
+        "callsign": "13C1",
+        "billet": "Senior Engineer Sergeant",
+        "reqRank": "SFC",
         "leader": false,
-        "occupant": null
+        "occupant": {
+         "name": "Peachy",
+         "rank": "SGT"
+        }
        },
        {
-        "id": "RGR-1A4",
-        "callsign": "Bulldog 1 Alpha 4",
-        "billet": "Rifleman",
-        "reqRank": "PFC",
-        "leader": false,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "1st Squad · Fire Team Bravo",
-      "element": "1st Squad",
-      "section": "Fire Team Bravo",
-      "seats": [
-       {
-        "id": "RGR-1B1",
-        "callsign": "Bulldog 1 Bravo 1",
-        "billet": "Team Leader",
-        "reqRank": "SGT",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-1B2",
-        "callsign": "Bulldog 1 Bravo 2",
-        "billet": "Automatic Rifleman",
-        "reqRank": "SPC",
-        "leader": false,
-        "occupant": null
-       },
-       {
-        "id": "RGR-1B3",
-        "callsign": "Bulldog 1 Bravo 3",
-        "billet": "Grenadier",
-        "reqRank": "SPC",
-        "leader": false,
-        "occupant": null
-       },
-       {
-        "id": "RGR-1B4",
-        "callsign": "Bulldog 1 Bravo 4",
-        "billet": "Rifleman",
-        "reqRank": "PFC",
-        "leader": false,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "2nd Squad",
-      "element": "2nd Squad",
-      "section": null,
-      "seats": [
-       {
-        "id": "RGR-2",
-        "callsign": "Bulldog 2",
-        "billet": "Squad Leader",
+        "id": "13C2",
+        "callsign": "13C2",
+        "billet": "Junior Engineer Sergeant",
         "reqRank": "SSG",
-        "leader": true,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "2nd Squad · Fire Team Alpha",
-      "element": "2nd Squad",
-      "section": "Fire Team Alpha",
-      "seats": [
-       {
-        "id": "RGR-2A1",
-        "callsign": "Bulldog 2 Alpha 1",
-        "billet": "Team Leader",
-        "reqRank": "SGT",
-        "leader": true,
-        "occupant": null
+        "leader": false,
+        "occupant": {
+         "name": "AceTactical",
+         "rank": "SSG"
+        }
        },
        {
-        "id": "RGR-2A2",
-        "callsign": "Bulldog 2 Alpha 2",
-        "billet": "Automatic Rifleman",
-        "reqRank": "SPC",
+        "id": "13D1",
+        "callsign": "13D1",
+        "billet": "Senior Medical Sergeant",
+        "reqRank": "SFC",
         "leader": false,
         "occupant": null
        },
        {
-        "id": "RGR-2A3",
-        "callsign": "Bulldog 2 Alpha 3",
-        "billet": "Grenadier",
-        "reqRank": "SPC",
-        "leader": false,
-        "occupant": null
-       },
-       {
-        "id": "RGR-2A4",
-        "callsign": "Bulldog 2 Alpha 4",
-        "billet": "Rifleman",
-        "reqRank": "PFC",
-        "leader": false,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "2nd Squad · Fire Team Bravo",
-      "element": "2nd Squad",
-      "section": "Fire Team Bravo",
-      "seats": [
-       {
-        "id": "RGR-2B1",
-        "callsign": "Bulldog 2 Bravo 1",
-        "billet": "Team Leader",
-        "reqRank": "SGT",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-2B2",
-        "callsign": "Bulldog 2 Bravo 2",
-        "billet": "Automatic Rifleman",
-        "reqRank": "SPC",
-        "leader": false,
-        "occupant": null
-       },
-       {
-        "id": "RGR-2B3",
-        "callsign": "Bulldog 2 Bravo 3",
-        "billet": "Grenadier",
-        "reqRank": "SPC",
-        "leader": false,
-        "occupant": null
-       },
-       {
-        "id": "RGR-2B4",
-        "callsign": "Bulldog 2 Bravo 4",
-        "billet": "Rifleman",
-        "reqRank": "PFC",
-        "leader": false,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "3rd Squad",
-      "element": "3rd Squad",
-      "section": null,
-      "seats": [
-       {
-        "id": "RGR-3",
-        "callsign": "Bulldog 3",
-        "billet": "Squad Leader",
+        "id": "13D2",
+        "callsign": "13D2",
+        "billet": "Junior Medical Sergeant",
         "reqRank": "SSG",
-        "leader": true,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "3rd Squad · Fire Team Alpha",
-      "element": "3rd Squad",
-      "section": "Fire Team Alpha",
-      "seats": [
-       {
-        "id": "RGR-3A1",
-        "callsign": "Bulldog 3 Alpha 1",
-        "billet": "Team Leader",
-        "reqRank": "SGT",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-3A2",
-        "callsign": "Bulldog 3 Alpha 2",
-        "billet": "Automatic Rifleman",
-        "reqRank": "SPC",
         "leader": false,
         "occupant": null
        },
        {
-        "id": "RGR-3A3",
-        "callsign": "Bulldog 3 Alpha 3",
-        "billet": "Grenadier",
-        "reqRank": "SPC",
+        "id": "13E1",
+        "callsign": "13E1",
+        "billet": "Senior Communications Sergeant",
+        "reqRank": "SFC",
         "leader": false,
-        "occupant": null
+        "occupant": {
+         "name": "CH66SE",
+         "rank": "SGT"
+        }
        },
        {
-        "id": "RGR-3A4",
-        "callsign": "Bulldog 3 Alpha 4",
-        "billet": "Rifleman",
-        "reqRank": "PFC",
-        "leader": false,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "3rd Squad · Fire Team Bravo",
-      "element": "3rd Squad",
-      "section": "Fire Team Bravo",
-      "seats": [
-       {
-        "id": "RGR-3B1",
-        "callsign": "Bulldog 3 Bravo 1",
-        "billet": "Team Leader",
-        "reqRank": "SGT",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-3B2",
-        "callsign": "Bulldog 3 Bravo 2",
-        "billet": "Automatic Rifleman",
-        "reqRank": "SPC",
-        "leader": false,
-        "occupant": null
-       },
-       {
-        "id": "RGR-3B3",
-        "callsign": "Bulldog 3 Bravo 3",
-        "billet": "Grenadier",
-        "reqRank": "SPC",
-        "leader": false,
-        "occupant": null
-       },
-       {
-        "id": "RGR-3B4",
-        "callsign": "Bulldog 3 Bravo 4",
-        "billet": "Rifleman",
-        "reqRank": "PFC",
-        "leader": false,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "Weapons Squad",
-      "element": "Weapons Squad",
-      "section": null,
-      "seats": [
-       {
-        "id": "RGR-4",
-        "callsign": "Bulldog 4",
-        "billet": "Weapons Squad Leader",
+        "id": "13E2",
+        "callsign": "13E2",
+        "billet": "Junior Communications Sergeant",
         "reqRank": "SSG",
-        "leader": true,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "Weapons Squad · Gun Team Alpha",
-      "element": "Weapons Squad",
-      "section": "Gun Team Alpha",
-      "seats": [
-       {
-        "id": "RGR-4A1",
-        "callsign": "Bulldog 4 Alpha 1",
-        "billet": "Machine Gunner",
-        "reqRank": "SPC",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-4A2",
-        "callsign": "Bulldog 4 Alpha 2",
-        "billet": "Assistant Gunner",
-        "reqRank": "PFC",
-        "leader": false,
-        "occupant": null
-       }
-      ]
-     },
-     {
-      "name": "Weapons Squad · Gun Team Bravo",
-      "element": "Weapons Squad",
-      "section": "Gun Team Bravo",
-      "seats": [
-       {
-        "id": "RGR-4B1",
-        "callsign": "Bulldog 4 Bravo 1",
-        "billet": "Machine Gunner",
-        "reqRank": "SPC",
-        "leader": true,
-        "occupant": null
-       },
-       {
-        "id": "RGR-4B2",
-        "callsign": "Bulldog 4 Bravo 2",
-        "billet": "Assistant Gunner",
-        "reqRank": "PFC",
         "leader": false,
         "occupant": null
        }
       ]
      }
     ],
-    "seats": 40,
-    "filled": 0
+    "seats": 28,
+    "filled": 12
    },
    "stages": [
     {
-     "value": "RASP Candidate",
+     "value": "SFAS Candidate",
      "stage": "selection",
      "count": 0
     },
     {
-     "value": "Ranger",
-     "stage": "operator",
+     "value": "SFQC Student",
+     "stage": "student",
      "count": 0
+    },
+    {
+     "value": "Green Beret",
+     "stage": "operator",
+     "count": 16
     }
    ],
-   "open": 40
+   "open": 16
   },
   {
    "key": "seal",
