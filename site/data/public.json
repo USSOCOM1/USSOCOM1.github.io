@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-10T22:54:18.606Z",
+ "generated": "2026-11-12T01:24:20.965Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -878,7 +878,7 @@
     {
      "value": "SQT Student",
      "stage": "student",
-     "count": 1
+     "count": 2
     },
     {
      "value": "SEAL",
@@ -1111,7 +1111,7 @@
     {
      "value": "A&S Candidate",
      "stage": "selection",
-     "count": 3
+     "count": 2
     },
     {
      "value": "MRC Candidate",
