@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-12T16:32:03.612Z",
+ "generated": "2026-11-14T20:12:07.765Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,7 +11,7 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 37,
+  "members": 38,
   "seats": 91,
   "filled": 27,
   "open": 64,
@@ -315,7 +315,7 @@
     {
      "value": "CAG Candidate",
      "stage": "selection",
-     "count": 0
+     "count": 1
     },
     {
      "value": "OTC Student",
