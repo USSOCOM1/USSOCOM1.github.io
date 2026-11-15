@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-14T20:12:07.765Z",
+ "generated": "2026-11-15T19:37:09.545Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,7 +11,7 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 38,
+  "members": 37,
   "seats": 91,
   "filled": 27,
   "open": 64,
@@ -1111,7 +1111,7 @@
     {
      "value": "A&S Candidate",
      "stage": "selection",
-     "count": 2
+     "count": 1
     },
     {
      "value": "MRC Candidate",
