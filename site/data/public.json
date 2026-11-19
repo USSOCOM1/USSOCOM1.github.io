@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-15T19:37:09.545Z",
+ "generated": "2026-11-19T21:22:17.846Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,7 +11,7 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 37,
+  "members": 36,
   "seats": 91,
   "filled": 27,
   "open": 64,
@@ -878,7 +878,7 @@
     {
      "value": "SQT Student",
      "stage": "student",
-     "count": 2
+     "count": 1
     },
     {
      "value": "SEAL",
