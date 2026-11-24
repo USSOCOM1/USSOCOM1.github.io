@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-24T01:50:21.546Z",
+ "generated": "2026-11-24T01:55:21.559Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -1032,7 +1032,7 @@
         "leader": false,
         "occupant": {
          "name": "SilentSapper",
-         "rank": "Pvt"
+         "rank": "Sgt"
         }
        },
        {
@@ -1114,7 +1114,7 @@
     {
      "value": "A&S Candidate",
      "stage": "selection",
-     "count": 2
+     "count": 1
     },
     {
      "value": "MRC Candidate",
@@ -1124,7 +1124,7 @@
     {
      "value": "Raider",
      "stage": "operator",
-     "count": 9
+     "count": 10
     }
    ],
    "open": 9
