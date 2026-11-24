@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T17:20:16.565Z",
+ "generated": "2026-11-24T01:50:21.546Z",
  "unit": {
   "name": "United States Special Operations Command",
   "short": "USSOCOM",
@@ -11,10 +11,10 @@
  },
  "discordInvite": "https://discord.gg/ussocom",
  "stats": {
-  "members": 36,
+  "members": 37,
   "seats": 91,
-  "filled": 27,
-  "open": 64,
+  "filled": 28,
+  "open": 63,
   "units": 4,
   "recruiting": [
    "cag",
@@ -1030,7 +1030,10 @@
         "billet": "Critical Skills Operator",
         "reqRank": "Sgt",
         "leader": false,
-        "occupant": null
+        "occupant": {
+         "name": "SilentSapper",
+         "rank": "Pvt"
+        }
        },
        {
         "id": "8311-14",
@@ -1105,13 +1108,13 @@
      }
     ],
     "seats": 18,
-    "filled": 8
+    "filled": 9
    },
    "stages": [
     {
      "value": "A&S Candidate",
      "stage": "selection",
-     "count": 1
+     "count": 2
     },
     {
      "value": "MRC Candidate",
@@ -1124,7 +1127,7 @@
      "count": 9
     }
    ],
-   "open": 10
+   "open": 9
   }
  ],
  "pipeline": {
